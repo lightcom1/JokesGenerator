@@ -5,7 +5,7 @@ const buttons = document.querySelectorAll('input[name="lang"]');
 const microphone = document.querySelector('.fa-microphone');
 const message = new SpeechSynthesisUtterance();
 const enbtn = document.querySelector('#enbtn');
-
+let voices = [];
 let jokes = [
 	'Что будет если скрестить персик и дыню? <br> Пердыня',
 	'Ебутся как-то два клоуна, а через час один другому говорит:<br>- Уже что-то не смешно.',
@@ -29,7 +29,7 @@ let jokes = [
 ];
 
 const timer = setInterval(() => {
-	let voices = speechSynthesis.getVoices();
+	voices = speechSynthesis.getVoices();
 	if (voices.length !== 0) {
 		clearInterval(timer);
 	}
