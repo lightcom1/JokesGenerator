@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<title>Генератор шутеечек</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="languages">
+				<div class="da">
+					<input type="radio" name="lang" id="enbtn"  />
+					<label for="enbtn" id="en">EN</label>
+					<input type="radio" name="lang" id="rubtn"checked />
+					<label for="rubtn" id="ru">RU</label>
+				</div>
+				<i class="fas fa-microphone"></i>
+			</div>
+			<span>&#128514;</span>
+			<p id="joke"></p>
+			<button id="btn">Загрузить разрывную</button>
+		</div>
+		<script src="jokes.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
