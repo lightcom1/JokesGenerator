@@ -6,15 +6,19 @@
 }
 body {
 	background-color: #fab22e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 .wrapper {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 80vmin;
 	padding: 50px 40px;
 	background-color: #15161a;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
 	box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
 }
@@ -30,7 +34,7 @@ p {
 	font-weight: 400;
 	text-align: center;
 	word-wrap: break-word;
-	line-height: 35px;
+	line-height: 28px;
 	margin: 30px 0;
 	opacity: 0;
 }
