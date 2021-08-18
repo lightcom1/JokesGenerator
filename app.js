@@ -77,11 +77,13 @@ microphone.addEventListener('click', () => {
 		message.lang = 'en-US';
 		message.voice = voices[2];
 		message.text = jokeContainer.textContent;
+		window.speechSynthesis.cancel()
 		window.speechSynthesis.speak(message);
 	} else {
 		message.lang = 'ru-RU';
 		message.voice = voices[3];
 		message.text = jokeContainer.textContent;
+		window.speechSynthesis.cancel()
 		window.speechSynthesis.speak(message);
 	}
 });
