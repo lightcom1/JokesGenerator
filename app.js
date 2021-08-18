@@ -29,7 +29,7 @@ let jokes = [
 ];
 
 const timer = setInterval(() => {
-	const voices = speechSynthesis.getVoices();
+	let voices = speechSynthesis.getVoices();
 	if (voices.length !== 0) {
 		clearInterval(timer);
 	}
