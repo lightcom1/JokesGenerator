@@ -42,6 +42,8 @@ const timer = setInterval(() => {
 	}
 }, 200);
 
+let jokeIndex = 0;
+
 let getEnJoke = async () => {
 	jokeContainer.classList.remove('fade');
 	const data = await fetch(url);
@@ -53,8 +55,9 @@ let getEnJoke = async () => {
 let getRuJoke = () => {
 	jokeContainer.classList.remove('fade');
 	setTimeout(() => {
-		let randomNumber = Math.floor(Math.random() * jokes.length);
-		jokeContainer.innerHTML = `${jokes[randomNumber]}`;
+		jokeContainer.innerHTML = `${jokes[jokeIndex]}`;
+		jokeIndex++;
+		if(jokeIndex > jokes.length) jokeIndex = 0;
 		jokeContainer.classList.add('fade');
 	}, 100);
 };
